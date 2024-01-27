@@ -3,7 +3,7 @@ import 'package:pico_logger_app/models/temperature_data.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
 /// A simple widget representing a custom designed and configured plot of numbers
-/// 
+///
 class CustomPlot extends StatelessWidget {
   final String axisTitleX;
   final String axisTitleY;

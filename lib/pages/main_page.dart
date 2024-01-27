@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pico_logger_app/widgets/custom_button.dart';
 import 'package:pico_logger_app/widgets/custom_plot.dart';
 
 class MainPage extends StatelessWidget {
@@ -10,14 +11,13 @@ class MainPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Temp App'),
       ),
-      body: Center(
-        child: CustomPlot(),
+      body: const Center(
+        child: CustomPlot(
+          axisTitleX: 'time',
+          axisTitleY: 'C°',
+        ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.thermostat),
-      ),
+      floatingActionButton: CustomButton(),
     );
   }
 }

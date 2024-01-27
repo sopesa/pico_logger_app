@@ -1,0 +1,1 @@
+/// Service responsible for communication via http protocol
